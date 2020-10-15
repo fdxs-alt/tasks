@@ -1,1 +1,1 @@
-# webpack-config-react
+### Exercises to pratice more advanced react 

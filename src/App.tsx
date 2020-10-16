@@ -1,17 +1,20 @@
-import { usePagination } from "./Hooks/usePagination";
-import React from "react";
-import { data } from "./Data/data";
-import PaginationExample from "./Components/PaginationExample";
+import React, { useRef } from "react";
+import useGeo from "./Hooks/useGeo";
 
 const App: React.FC = () => {
-  const [{ actualPageIdx, lastPageIdx, entriesOnSelectedPage }] = usePagination(
-    data
-  );
+  const ref = useRef<HTMLDivElement>(null);
+  const { geoData, toggleListening } = useGeo(ref);
 
-  console.log(actualPageIdx, lastPageIdx, entriesOnSelectedPage);
   return (
-    <div>
-      <PaginationExample />
+    <div ref={ref}>
+      {geoData && (
+        <h5>
+          {geoData.latitude} {geoData.longitude}
+        </h5>
+      )}
+      <button type="button" onClick={() => toggleListening()}>
+        Toggle
+      </button>
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import Faqs from "./Components/Faqs";
 import React from "react";
-import faqs from "./Data/faqs";
+
+import CompoundComponentsExample from "./Components/CompoundComponentsExample";
+
 const App: React.FC = () => {
   return (
     <div>
-      <Faqs faqs={faqs} />
+      <CompoundComponentsExample />
     </div>
   );
 };

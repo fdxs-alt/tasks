@@ -13,3 +13,9 @@
 11. usePreviousValue hook
 12. useMousePosition hook
 13. useProgressBar hook
+14. useTimeout hook
+15. useTitle hook
+16. useWindowSize hook
+17. useKeyPress hook
+18. useHover hook
+19. useImmer hook

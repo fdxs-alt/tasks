@@ -19,3 +19,7 @@
 17. useKeyPress hook
 18. useHover hook
 19. useImmer hook
+20. useSetState hook
+21. useMediaQuery hook
+22. useIntersectionObserver hook
+23. useArray hook

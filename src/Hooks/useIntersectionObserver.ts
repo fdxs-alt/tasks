@@ -9,9 +9,7 @@ function useIntersectionObserver(
 
   const observer = useRef(
     new IntersectionObserver((entry: IntersectionObserverEntry[]) => {
-      if (entry[0].isIntersecting) {
-        setInView(true);
-      } else setInView(false);
+      setInView(entry[0].isIntersecting);
     }, options)
   );
 

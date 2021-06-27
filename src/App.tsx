@@ -1,8 +1,8 @@
 import React from "react";
-import useIntersectionObserver from "./Hooks/useIntersectionObserverWithUseCallback";
+import useIntersectionObserver from "./Hooks/useIntersectionObserver";
 
 const App: React.FC = () => {
-  const { inView, ref } = useIntersectionObserver({ once: false });
+  const { inView, ref } = useIntersectionObserver({ once: true });
   console.log(inView);
   return (
     <div>
